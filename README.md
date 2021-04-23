@@ -1,5 +1,6 @@
 ﻿# BreezySLAM-Webots Implementation (Python)
 This is a guide on how to use the python version of BreezySLAM. BreezySLAM uses TinySLAM's CoreSLAM with a particle filter.
+
 Please see the important notes at the end of the page for tips.
 ## Adding the package
 For Python3, compile the package by navigating to the python folder, cd to `BreezySLAM/python` then type the following command:
