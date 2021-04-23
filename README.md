@@ -99,5 +99,7 @@ Webot's scan size: `240/0.36=667`
 
 ##  References
 [BreezySLAM package](https://github.com/simondlevy/BreezySLAM)
+
 [Hoyuko URG04LX datasheet](https://www.hokuyo-aut.jp/dl/Specifications_URG-04LX_1513063395.pdf)
+
 [Webots](https://cyberbotics.com/)
