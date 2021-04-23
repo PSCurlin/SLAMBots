@@ -46,8 +46,11 @@ class  URG04LX(Laser):
 Don't forget to save and recompile the package by doing: `sudo python3 setup.py install` in the `BreezySLAM/python` folder.
 ## Setting Up the Data
 The format of the data is the most important part of BreezySLAM. All data entered must be _integers_ or it will not be happy. This means that any values inputted from `lidar.getRangeImage()` that are `inf` must be converted to a 0.
+
 **Time:** 1 column. The suggested value is the time being in microseconds. This doesn't really matter since it just requires for the time to be ascending. This can simply be the values of a counter placed in the `while robot.step(timestep) != -1` loop.
+
 **Odometry:** 24 columns. Odometry in BreezySLAM is optional. This is set by a boolean statement when running BreezySLAM. (Note : this is something I still haven't quite figured out. I have instead just set the use_odometry boolean to false and 0's were insterted for the )
+
 **LIDAR Data:** n columns (where n is the scan size). These are the values generated from `lidar.getRangeImage()`. Since Webots outputs them as floats and BreezySLAM prefers large values to take into account the decimals that would be otherwise truncated, we instead must multiply the  float by 1000 and then convert it into an integer. For example, if we had values of `[1.31,1.47,1.28]` we would need `[1310,1470,1280]`. Furthermore, we would need to get rid of the `inf` by setting them all to 0 with an if statement so that if we have `[1.38,inf,inf]`, we would then have `[1380,0,0]`.
 The following is an example of how it is shaped:
 
