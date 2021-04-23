@@ -75,9 +75,11 @@ Since the original BreezySLAM package calls for inputs through the terminal usin
 
 ##  Notes and Issues
 **Windows Installation:** According to the Github page for BreezySLAM, it is not recommended for use on Windows and is no longer maintained (at least for the python version).
+
 **Differences in scan size of the URG04LX:** The reason why the scan size in Webots is different from that in the example is due to the way that the angular resolution was calculated. The author recalculated this resolution by doing `360/1024=0.35156`. On the other hand, Webots simply used the value of `0.36` provided by the documentation. We can see the impact of this difference by calculating the scan size:
 Author's scan size: `240/0.35156=683`
 Webot's scan size: `240/0.36=667`
+
 **Scan Rate:** The number doesn't really matter in Webots since it updates every 16ms. BreezySLAM has the option of receiving data over USB and can tell you the 
 ##  Work in Progress
 
