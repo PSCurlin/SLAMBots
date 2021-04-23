@@ -34,9 +34,13 @@ First, it is important to look at the LIDAR's datasheet ([link to the Hoyuko URG
 
 **Scan Size:** According to the datasheet angular resolution of the device is of 0.36 degrees.
 From the datasheet itself, the detection angle is of 240 deg. This means that our scan size is: `240/0.36=667`.
+
 **Scan Rate:** In our example, we are given the scan speed, which is 100msec/scan. Since we want a frequency, we have to take the inverse. Since `1msec=0.001sec`, we have: `1/0.001=10Hz`.
+
 **Detection Angle:** 240 deg.
+
 **Distance No Detection:** 4000 mm
+
 Finally, we can create our new LIDAR class in the `sensors.py` file:
 ```` 
 class  URG04LX(Laser):
