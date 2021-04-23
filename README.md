@@ -73,7 +73,9 @@ For a more precise example, please look at the `exp2.dat` file located in `Breez
 From the example with the Hoyuko, we would have the first column be the time, the next 24 being the odometry values, and finally the next 667 columns dedicated to the LIDAR data. This means that there would be a total of 692 columns.
 ## Selecting a LIDAR device
 ## Calling BreezySLAM externally
-Since the original BreezySLAM package calls for inputs through the terminal using a make file, a small modification has to be done to the `log2pgm.py` file. The definition for `main()` can be removed and replaced with, for example `def RunBreezySlam(dataset,use_odometry,seed)`. dataset refers to the `.dat` file,  use_odometry the boolean value if odometry wants to be used, and the seed is a random number between 0 and 9999 which is used for the particle filter in order to allow for data to be reproducible.
+Since the original BreezySLAM package calls for inputs through the terminal using a make file, a small modification has to be done to the `log2pgm.py` file.
+
+The definition for `main()` can be removed and replaced with, for example, `def RunBreezySlam(dataset,use_odometry,seed)`. dataset refers to the `.dat` file,  use_odometry the boolean value if odometry wants to be used, and the seed is a random number between 0 and 9999 which is used for the particle filter in order to allow for data to be reproducible.
 ## Getting BreezySLAM's returned data
  
 ## Additional Settings
