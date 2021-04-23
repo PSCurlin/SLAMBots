@@ -65,7 +65,8 @@ The following is an example of how it is shaped:
 | 1    | 0| 0  |0  | ...| 0  | 1240| ...|0
 | 2    | 0| 0  |0  | ...| 0  | 0| ...|0
 | 3    | 0| 0  |0  | ...| 1362  | 1360| ...|0
-| ...  | 0| 0  |0  | ...| 0  | 0| ...|1560
+| 4  | 0| 0  |0  | ...| 0  | 0| ...|1560
+| ...  | ...| ...  |...  | ...| ...  |...| ...|...
 
 Each column is seperated by a space (" ") and each row is seperated by a new line.
 For a more precise example, please look at the `exp2.dat` file located in `BreezySLAM/examples`.
