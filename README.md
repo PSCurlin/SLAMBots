@@ -17,8 +17,10 @@ class  my_lidar(Laser):
 ````
 ### Scan Size
 This is how many readings the LIDAR does every iteration. In order to find out how many are being outputted, a calculation can be done or a simple print statement in Webots can be used instead.
+
 **Calculation:**
 The scan size (which is unitless) is determined by the scan angle (degrees) and the scan resolution (degrees per bits): `Scan size = scan angle/scan resolution`
+
 **Print statement:**
 In Webots, LIDAR sensor readings are passed through the `lidar.getRangeImage()` function. A single `print(lidar.getRangeImage)` will simply show the size of the LIDAR reading in the console.
 ### Scan Rate
